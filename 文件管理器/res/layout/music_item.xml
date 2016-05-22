@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="10dp">
+    
+    <TextView 
+        android:id="@+id/tv_item_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="富士山下"
+        />
+    <TextView 
+        android:id="@+id/tv_item_music_singer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#aaaaaa"
+        android:text="陈奕迅"
+        android:layout_alignLeft="@+id/tv_item_music_name"
+        android:layout_below="@+id/tv_item_music_name"
+        />
+    <TextView 
+        android:id="@+id/tv_line"
+        android:background="#aaaaaa"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_item_music_singer"
+        android:layout_alignTop="@+id/tv_item_music_singer"
+        android:layout_marginLeft="3dp"
+        />
+    <TextView 
+        android:id="@+id/tv_item_music_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#aaaaaa"
+        android:textSize="15sp"
+        android:text="All About Us"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/tv_line"
+        android:layout_alignTop="@+id/tv_item_music_singer"
+        android:layout_marginLeft="3dp"
+        />
+
+</RelativeLayout>
